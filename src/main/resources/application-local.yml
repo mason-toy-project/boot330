@@ -1,0 +1,32 @@
+env:
+    name: local
+    custom: hihi
+
+spring:
+    jpa:
+      show-sql: true
+      database-platform: org.hibernate.dialect.MySQLDialect
+      open-in-view: false # False for Back-end server. https://gracelove91.tistory.com/100
+
+
+    datasource:
+      url: jdbc:mysql://127.0.0.1:53306/
+      username: root
+      password: root
+      driver-class-name: com.mysql.cj.jdbc.Driver
+
+    hikari:
+      maximum-pool-size: 60
+      connection-timeout: 30000
+      max-lifetime: 280000
+
+server:
+  port: 48080
+
+logging:
+  level:
+    com.mason.practice.boot330: DEBUG
+
+
+
+
