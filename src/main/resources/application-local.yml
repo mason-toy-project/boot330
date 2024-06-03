@@ -22,6 +22,10 @@ spring:
 
 server:
   port: 48080
+  shutdown: graceful
+  spring:
+    lifecycle:
+      timeout-per-shutdown-phase: 600s
 
 logging:
   level:
